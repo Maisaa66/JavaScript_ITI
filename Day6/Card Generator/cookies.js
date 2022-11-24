@@ -54,4 +54,3 @@ function splitCookie(cookie){
 
 }
 
-export { allCookie, getCookie, splitCookie, hasCookie, setCookie, deleteCookie };

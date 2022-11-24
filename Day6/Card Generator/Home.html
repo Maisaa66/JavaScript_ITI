@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Maker</title>
     <link href="style.css" rel="stylesheet">
+    <script src="main.js"></script>
 </head>
 <body>
-<div id="header">
+<div class="header">
     <b>
 
         <span >Generate "Get Well Soon" Card</span>
@@ -17,24 +18,24 @@
 
 <div class="images">
     <div class="rad">
-        <label for="radio1">
-            <img src="images/gws.jpg">
+        <label for="radio1" >
+            <img src="images/gws.jpg" id="img1">
         </label>
-        <input type="radio" name="radio" id="my_radio_button_id1" />
+        <input type="radio" name="radio" id="radio1" onclick="setBorder('img1')" />
       </div>
 
       <div class="rad">
         <label for="radio2">
-            <img src="images/gws2.jpg">
+            <img src="images/gws2.jpg" id="img2">
         </label>
-        <input type="radio" name="radio" id="my_radio_button_id1" />
+        <input type="radio" name="radio" id="radio2" onclick="setBorder('img2')"/>
       </div>
 
       <div class="rad">
         <label for="radio3">
-            <img src="images/gws3.jpg">
+            <img src="images/gws3.jpg" id="img3">
         </label>
-        <input type="radio" name="radio" id="my_radio_button_id1" />
+        <input type="radio" name="radio" id="radio3" onclick="setBorder('img3')"/>
       </div>
 
 
@@ -42,26 +43,37 @@
 <div class="images">
     <div class="rad">
         <label for="radio4">
-            <img src="images/gwsf.jpg">
+            <img src="images/gwsf.jpg" id="img4">
         </label>
-        <input type="radio" name="radio" id="my_radio_button_id1" />
+        <input type="radio" name="radio" id="radio4" onclick="setBorder('img4')"/>
       </div>
 
       <div class="rad">
         <label for="radio5">
-            <img src="images/gwsf2.jpg">
+            <img src="images/gwsf2.jpg" id="img5">
         </label>
-        <input type="radio" name="radio" id="my_radio_button_id1" />
+        <input type="radio" name="radio" id="radio5" onclick="setBorder('img5')"/>
       </div>
 
       <div class="rad">
         <label for="radio6">
-            <img src="images/gwsf3.jpg">
+            <img src="images/gwsf3.jpg" id="img6">
         </label>
-        <input type="radio" name="radio" id="my_radio_button_id1" />
+        <input type="radio" name="radio" id="radio6" onclick="setBorder('img6')"/>
       </div>
 
 
 </div>
+
+<div class="header">
+    <textarea rows="6" name="complaint" id="complaint" placeholder="Enter what you want to write on the card here, please!" 
+    required=""></textarea>
+</div>
+
+<div id="buttonContainer">
+<input type="button" id="generator"name="Generator", value="Generate">
+</div>
+
+
 </body>
 </html>

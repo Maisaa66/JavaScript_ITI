@@ -1,32 +1,66 @@
-body{
-
-    background-image: url("images/5570863.jpg");
-    background-size: cover;}
-
-#header{
-text-align: center;
-font-size: 60px;
-font-family: 'Brush Script MT';
-margin-top: 20px;
-color:maroon;
-text-shadow: 2px 2px 2px pink;
+body {
+  background-image: url("images/5570863.jpg");
+  background-size: cover;
 }
 
-.images{
-    text-align: center;
-    margin-top: 5%;
+.header {
+  text-align: center;
+  font-size: 60px;
+  font-family: "Brush Script MT";
+  margin-top: 20px;
+  color: maroon;
+  text-shadow: 2px 2px 2px pink;
 }
 
-img  {
-    height: 150px;
-    width: 180px;
-    box-shadow: 10px 10px 5px 4px rgba(173, 216, 230, 0.365);
+.images {
+  text-align: center;
+  margin-top: 5%;
+}
+
+ img {
+  height: 150px;
+  width: 180px;
+  box-shadow: 10px 10px 5px 4px rgba(173, 216, 230, 0.365);
+
 
 }
 
-      .rad {
-        display:inline-block; margin-right: 50px;
-    }
-      input[type=radio] {text-align:center;}
-      label {display:block;  text-align:center;}
-      
+
+.rad {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+label {
+  display: block;
+  text-align: center;
+}
+
+
+
+  
+.txtInput {
+  text-align: center;
+}
+
+#complaint {
+  margin-top: 20px;
+  width: 400px;
+  height: 150px;
+  box-shadow: 10px 10px 5px 4px rgba(173, 216, 230, 0.365);
+}
+#buttonContainer {
+  text-align: center;
+  margin-top: 10px;
+}
+#generator {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  border-color: blanchedalmond;
+  color: blanchedalmond;
+  background-color: maroon;
+  font-weight: bold;
+  font-family: "Brush Script MT";
+  font-size: 30px;
+}

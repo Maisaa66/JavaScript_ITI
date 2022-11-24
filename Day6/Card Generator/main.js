@@ -10,9 +10,13 @@ for(i=0;i<images.length;i++){
         document.images[i].style.border="";
 
     }
-
 }
 
 
 
 }
+
+function openPreview(){
+    open("preview.html", "");
+}
+

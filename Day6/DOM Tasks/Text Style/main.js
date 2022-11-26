@@ -1,3 +1,4 @@
+//each function if changing in specific attribute in style
 
 function ChangeFont(font){
     let element = document.getElementById("PAR")

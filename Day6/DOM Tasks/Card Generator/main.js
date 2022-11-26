@@ -13,7 +13,6 @@ for(i=0;i<images.length;i++){
 }
 
 
-
 }
 
 function openPreview(){
@@ -21,11 +20,17 @@ function openPreview(){
     console.log(answer);
     if(answer!==undefined){
         open("preview.html", "", "width=650px, height=500px");
-
+        for(i=0;i<images.length;i++){
+            let image=document.getElementsByName('radiobtn')[i]
+            if(image.checked){
+                let image=document.getElementsByName('radiobtn')[i].checked=false;
+                setBorder(0)
+        
+            }
+        }
     }
     
 }
-
 
 
 //function the svae data in cookie
@@ -40,7 +45,8 @@ for(i=0;i<images.length;i++){
         setCookie('image', document.getElementsByTagName('img')[i].getAttribute('src'))
         let image=document.getElementsByName('radiobtn')[i].checked=false;
         imageChecked=true;
-        setBorder(0);
+        setBorder(0)
+
     }
 }
 
@@ -48,7 +54,7 @@ if(msg.value===""){
     response = window.alert("You did not write a massage");
 
 }
-else if(!imageChecked && msg.value===''){
+else if(!imageChecked && msg.value===""){
     response = window.alert("You did not write a massage or choose a image");
 }
 else if (!imageChecked){

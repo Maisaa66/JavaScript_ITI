@@ -14,6 +14,8 @@ let fields = form.elements
 let submit = document.getElementById("submit-btn");
 
 //Modify the event done on submit
+//the default behaviour of submit is to take you to other page
+//if the user did not confirm he will stay at the same page
 form.addEventListener("submit", function(event){
     let reponse = confirm("Do You Want To Continue?")
     if(!reponse){
@@ -27,9 +29,10 @@ let newEvent = new Event("timeout")
 form.addEventListener("timeout", function(){
     alert("Please enter you data!")
 })
-console.log(form)
-console.log(fields)
 
+//timeOut function to check if all the form field is empty or not 
+//if it is empty we will dispatch the event after 2.5 seconds
+// and will ask the user to enter his data
 function timeOut(){
     let flag=true;
     for (var i = 0, field; field = fields[i++];) {

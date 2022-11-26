@@ -1,3 +1,11 @@
+//this function do the follow
+//First it will check if there is a data saved in cookie or not
+//1-get the cookie to get the image name and the msg wriiten by the customer
+//2-create div element to store the image in it and img element
+//3-create paragraph element to write the msg on it
+//4-and append all this in the body
+
+//if not it will show an alert to return and choose image and write a msg
 
 function preview(){
 let checkCookie = allCookie()

@@ -1,5 +1,6 @@
 let images=document.images
 
+//this function will set border on the checked radio button only
 function setBorder(id){
 
 for(i=0;i<images.length;i++){
@@ -15,6 +16,10 @@ for(i=0;i<images.length;i++){
 
 }
 
+//this function will 
+//1- save the image name and the msg at cookie file
+//2-open the preview page
+//3- will empty all the selection
 function openPreview(){
     let answer = saveInfo();
     console.log(answer);
@@ -33,7 +38,7 @@ function openPreview(){
 }
 
 
-//function the svae data in cookie
+//function the save data in cookie
 function saveInfo(){
 let imageChecked=false;
 let msg = document.getElementById('complaint')

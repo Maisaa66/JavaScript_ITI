@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+    <script src="src.js"></script>
+</head>
+<body >
+    <h1 style="  text-align: center;">
+        Memory Game
+    </h1>
+    <div style="  text-align: center;
+    border: 3px solid green; padding: 10px;">
+        <div>
+            <img src="images/Moon.gif" alt="1" onclick="reveal(this)"> <!-- 1 -->
+            <img src="images/Moon.gif" alt="6" onclick="reveal(this)"><!-- 6 -->
+            <img src="images/Moon.gif" alt="2" onclick="reveal(this)"><!-- 2 -->
+            <img src="images/Moon.gif" alt="3" onclick="reveal(this)"><!-- 3 -->
+        
+        </div>
+        <div>
+            <img src="images/Moon.gif" alt="6" onclick="reveal(this)"><!-- 6 -->
+            <img src="images/Moon.gif" alt="5" onclick="reveal(this)"><!-- 5 -->
+            <img src="images/Moon.gif" alt="2" onclick="reveal(this)"><!-- 2 -->
+            <img src="images/Moon.gif"  alt="4" onclick="reveal(this)"><!-- 4 -->
+        
+        </div>
+        <div>
+            <img src="images/Moon.gif" alt="5" onclick="reveal(this)"><!-- 5 -->
+            <img src="images/Moon.gif" alt="1" onclick="reveal(this)"><!-- 1 -->
+            <img src="images/Moon.gif" alt="3" onclick="reveal(this)"><!-- 3 -->
+            <img src="images/Moon.gif" alt="4" onclick="reveal(this)"><!-- 4 -->
+        
+        </div>
+        <br>
+        <div >
+        <h1 id="score">
+        Your Current Score is: 0
+        </h1>
+        </div>
+        
+    </div>
+
+</body>
+</html>

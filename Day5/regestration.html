@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+</head>
+<body>
+
+<!-- form to take the information from the user and make from it a cookie for him-->
+
+
+    <fieldset>
+        <legend>Client Info:</legend>
+    <div>
+        
+        <label for="name">Enter your name:</label><br>
+        <input type="text" id="name" name="Name"><br>
+        
+    </div>
+<br>
+        <div>
+
+            <label for="age">Enter your age:</label><br>
+            <input type="number" id="age" name="Age"><br>
+
+        </div>
+        <br>
+        <div>
+        <tr >
+            <td>
+                <input id="m" name="gender" value="male" type="radio" />
+
+                <label for="m">Male</label>
+                <img src="images/1.jpg">
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input id="f" name="gender" value="female" type="radio" />
+                <label for="f">Female</label>
+                <img src="images/2.jpg">
+            </td>
+
+        </tr>
+
+    </div>
+        <br>
+
+    <div>
+        <label for="color"> Select your favourite color</label>
+        <select name="Color" id="color">
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+            <option value="Blue">Blue</option>
+        </select>
+    </div>
+        <br>
+
+<div>
+
+    <input  type="button" name="save" value="SaveInfo" id="saving">
+
+</div>
+
+
+</fieldset>
+
+<script type="module" src="main.js"></script>
+
+</body>
+
+</html>
